@@ -1,0 +1,12 @@
+1. result - http_response // хранит ответ на http-запрос
+2. header - http_headers // HTTP-заголовки запроса
+3. timeout - timeout_of_fetching_in_seconds // время ожидания на извлечение объекта в секундах
+4. max_queries - threshold_value_of_queries // верхий порог по количеству запросов перед вызовом исключения
+5. ids - task_identifiers_list // список идентификаторов задач
+6. timestamp - timestamp_of_task_finishing // время окончания выполнения задачи
+7. conn - pg_connection // объект соединения с базой данных
+8. idx - pointer_to_element // указатель на объект при итерации по списку
+9. a - left_bound && b - right_bound // левая и правая границы диапазона
+10. dataset - list_of_persons_dicts // хранение списка словарей по данным пользователей
+11.  seconds - request_duration_in_seconds // длительность запроса в секундах
+12. data - binary_image // хранение бинарной версии изображения
