@@ -1,0 +1,27 @@
+# п. 6.1
+1. rss_feed - news # функция обработки новостей из RSS-лент
+2. execution_seconds - loading_performance_seconds # время выполнения загрузки в методе замера производительности
+3. list_of_elements - ingridients # составные ингридиенты блюда
+4. list_of_recepies - breakfasts # перечень различных видов завтраков
+5. sets_intersection - same_products # продукты, встречающиеся в двух рецептах1. rss_feed - news # функция обработки новостей из RSS-лент
+
+# п. 6.2
+1. tasks_async_queue # объект асинхронной очереди задач Python
+2. inbound_adapter # объект, хранящий Inbound-адаптер для реализации потребителя абстрактной входящей очереди задач
+3. client_websocket
+4. kafka_producer
+
+# п. 6.3
+1. kafka_host, kafka_port
+2. recepie_uid, recepie_ingridients_amount
+3. recepie_cooking_complexity
+
+# п. 6.4
+1. expired_object_delete_marker - is_object_expired
+2. sse_kms_encrypted_objects - sse_kms_objects # было масло маслянное
+3. NoBucketWithProjectAssociatedException - NoBucketInProjectError 
+4. tasks_processing_responses_queue - task_results_queue
+5. number_of_reset_periods_without_errors - success_reset_amount
+6. inactive_period_for_upload_s - no_upload_seconds
+7. idx - ingridient_pointer
+8. val - kkal_amount
