@@ -1,0 +1,9 @@
+1. Для развязки логики хранения и реализации хранения данных класса Repository:
+- Repository.FromInMemory()
+- Repository.FromSqlAlchemy(session_object: Session)
+2. Работа с datetime:
+- Datetime.fromisoformat(value: str)
+- Datetime.fromisocalendar(year: int, week: int, day: int)
+3. Объект конфигурации
+- Configuration.from_pydantic(config: Model)
+- Configuration.from_dict(config: dict)
