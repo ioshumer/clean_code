@@ -1,0 +1,12 @@
+1. HOST_PORT - определение адреса порта
+2. MAX_USERS_PER_ACCOUBNT - количество пользователей на одном аккаунте
+3. MAX_ELEMENTS_IN_BASKET - предел количества элементов в корзине
+4. MAX_INGRIDIENTS_AMOUNT - предел ингридиентов в рецепте
+5. MAX_NUMBER_OF_REQUESTS - максимальное количество запросов на предохранителе
+6. LEFT_BOUND_OF_RANGE - левая граница набора числовых данных
+7. RIGHT_BOUND_OF_RANGE - правая граница набора числовых данных
+8. MAX_VOLUME_OF_LIQUID - максимальный объем жидкости по рецепту
+9. MIN_VOLUME_OF_LIQUID - минимальный объем жидкости по рецепту
+10. NUMBER_OF_SERVING_PEOPLE - количество персон
+11. COMMON_FRIENDS_AMOUNT - количество общих друзей
+12. GRAPH_NODES_DISTANCE - расстояние между узлами графа
