@@ -1,0 +1,81 @@
+1. определение входа в границы
+```python
+left_bound, right_bound = min(items), max(items)
+if left_bound < element and element < right_bound:
+	...
+```
+2. определение критерия готовности:
+```python
+while True:
+	time_is_up = calculate_processing_time()
+	is_temperature_arrived = get_temperature()
+	if time_is_up and is_temperature_arrived:
+		...
+```
+3. определение возможности пакетной загрузки данных
+```python
+while True:
+	is_time_interval_exceeded = calculate_duration_interval()
+	is_bucket_full = calculate_bucket_size()
+	if is_bucket_full of is_time_interval_exceeded:
+		bulk_insert(bucket)
+		...
+```
+4. поиск левой границы диапазона
+```python
+for item in values:
+	if item < LEFT_BOUND:
+		LEFT_BOUND = item
+		...
+```
+5. поиск правой границы диапазона
+```python
+for item in values:
+	if item > RIGHT_BOUND:
+		RIGHT_BOUND = item
+		...
+```
+6. работа с уникальными данными (более N значений) двух множеств 
+```python
+diff = set_a.symmetric_difference(set_b)
+MATCHED_DIFF = len(diff) >= N
+if MATCHED_DIFF:
+	...
+```
+7.  проверка баланса на достижение определенного уровня и общей суммы покупок для предоставления скидок, как привелигерованному клиенту
+```python
+GOOD_BALANCE = get_balance_status()
+BOUGHT_ENOUGH = calculate_sum_of_orders() > LEFT_BOUND
+if GOOD_BALANCE and BOUGHT_ENOUGH:
+	...
+```
+8.  Обработка ZeroDivision
+```python
+try:
+	amperage = voltage / resistance
+except ZeroDivisionError as error:
+	...
+```
+9. Приведение значений к одному типу
+```python
+max([int(i) for i in elements if i is not None])
+```
+10. приведение значений к одному типу
+```python
+left_bound = int(left_bound)
+right_bound = int(right_bound)
+if left_bound > right_bound:
+	...
+```
+11.  преобразование к unicode
+```python
+recipe = get_recipe()
+if recipe:
+	recipe = unicode(recipe, "utf-8")
+```
+12. проверка на тип
+```python
+recipe = get_recipe()
+if isinstance(recipe, str):
+	recipe = unicode(recipe, "utf-8")
+```
