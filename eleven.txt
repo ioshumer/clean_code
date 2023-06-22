@@ -1,0 +1,18 @@
+Инициализация переменных в конструкторе класса
+volume: float = 0.0
+priority: int = 0
+size_limit: int = 0
+workers_amount: int = 16
+working_mode: str = "DEBUG"
+2. Завершение работы с переменными
+running_mode = None
+query_result = None
+bulk_size = -1
+requests_frequency = -1
+success = None
+3. Переменные и циклы
+array_pointer = 0
+ingridients_counter = 0
+retry_connections_amount = 0
+current_element = 0
+iteration_number = 0
