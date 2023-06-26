@@ -1,0 +1,18 @@
+1. перенос переменных из области видимости функций в область условного оператора: 5 реализации
+	1. source_query_result
+	2. is_allowed_operation
+	3. current_employee
+	4. recipe_type
+	5. current_proxy
+	6. transformation_worker
+2. перенос переменных на уровень циклов
+	1. attempt_number
+	2. current_ingredient
+	3. interval_range
+	4. current_author
+	5. data_item
+3. формирование отдельных методов
+	1. add_new_account
+	2. generate_token
+	3. set_account_state
+	4. pass_account_to_work
