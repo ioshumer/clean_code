@@ -1,0 +1,46 @@
+1. Снижение вероятности пересечения индексов
+outer_pointer = 0
+while outer_pointer < len(outer_array):
+    ... 
+
+    inner_pointer = 0
+    while inner_pointer < len(inner_array):
+        ...
+        inner_pointer += 1
+    
+    ...
+    outer_pointer += 1
+
+
+2. Работа с очередью, как с последовательным контейнером
+
+connections_queue = Queue()
+...
+for conn in connections_queue.queue:
+    ...
+    process_connection(conn)
+
+
+
+raw_processed_data = Queue()
+...
+for raw_element in raw_processed_data.queue:
+    ...
+    transform_raw_data(raw_element)
+    ...
+
+
+3. Работа с массивом без прямой индексации
+
+ingridients = get_ingridients()
+total_cost = 0
+for item in ingridients:
+    total_cost += item.cost
+    ...
+
+
+accounts = load_accounts()
+for account in accounts:
+    ...
+    account.reset()
+    ...
