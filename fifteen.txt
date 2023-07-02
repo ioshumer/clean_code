@@ -1,0 +1,41 @@
+1. Процесс создания учётной записи:
+
+# Создание учётной записи
+...
+account.generate_user_agent()
+account.generate_access_token()
+account.generate_http_header()
+...
+
+
+2. Процесс выдачи оптимальной учётной записи:
+
+# выдать оптимальную учётную записть
+...
+account = account_manager.get_optimal_account()
+account.set_status(ACCOUNT_STATE.in_work)
+...
+
+
+3. Генерация строки подключения БД
+
+def get_db_url(async_mode=False):
+    # установка обязательного префикса для работы с асинхронной реализацией
+    async_prefix = "+asyncpg" if async_mode else ""
+
+
+4. # проверить параметры рецепта перед закупкой
+if ready_for_order(recepie):
+    ...
+
+5. # проверить доступность аккаунта
+if is_alive(account):
+    ...
+
+6. # проверить возможность вставки данных
+if process_duration > TIME_LIMIT or len(dataset) > DATASET_LIMIT:
+    ...
+
+7. # проверка возможности запроса через Account
+if request_allowed(account, proxy):
+    ...
