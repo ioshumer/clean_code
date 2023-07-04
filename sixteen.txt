@@ -1,0 +1,81 @@
+# 1. Информативные комментарии
+
+@declared_attr
+def __tablename__(cls) -> str:
+    # обязательное именование таблице в snake-style
+    return camel_to_snake(cls.__name__)
+
+
+# 2. Информативные комментарии
+
+# обязательное использование асинхронного драйвера БД
+db_url = get_db_url(db_name="test", async_mode=True) 
+
+
+# 3. информативные комментарии
+
+# соглашение об именовании объектов БД в соотетствии с п. 3.5
+naming_convention = {
+    "all_column_names": lambda constraint, table: "_".join([column.name for column in constraint.columns.values()]),
+    "ix": "ix_%(table_name)s_%(all_column_names)s",
+    ...
+    "pk": "pk_%(table_name)s",
+}
+
+
+# 4. информативные комментарии
+
+@property
+@abc.abstractmethod
+def _schema(self) -> Type[SCHEMA]:
+    # Структура, соответствующая существующей на уровне хранилища модели данных
+    raise NotImplementedError
+
+
+# 5. информативные комментарии
+
+@property
+@abc.abstractmethod
+def _model(self) -> Type[MODEL]:
+    # В качестве уникального идентификатора используется поле
+    # имя поля - uid, тип поля - uuid4
+    raise NotImplementedError
+
+
+# 6. информативные комментарии
+
+# импорт путей проекта, производить перед включением библиотек
+project_path = pathlib.Path(__file__).resolve().parents[2]
+sys.path.append(str(project_path))
+
+from service.common.adapters.orm.utils import get_db_url
+
+
+# 7. информативные комментарии
+
+@pytest.fixture(scope="session")
+def engine():
+    # использовать асинхронную реализацию подключения к БД
+    db_url = get_db_url(db_name="test", async_mode=True)
+    ...
+
+# 8. информативные комментарии
+for (i, row) in enumerate(self.yeardays_to_calendar(theyear, m)):
+    # месяцев в данном ряду
+    months = range(m*i+1, min(m*(i+1)+1, 13))
+
+
+# 9. информативные комментарии
+# максимальноые количество недель в текущем ряду
+height = max(len(cal) for cal in row)
+
+
+# 10. Комментарии TODO
+# todo убрать хардкод
+
+
+# 11. Комментарии TODO
+# todo обработать ошибки payload
+
+# 12. Комментарии TODO
+# todo реализовать отдельную обработку изображений
